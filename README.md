@@ -2,7 +2,7 @@
 
 This is the repository for AsyncOS, a small hobbyist operating system which is largely unique in it's attempt at being
 as asyncronous as possible - nearly all system calls are non-blocking, and communication between user processes and the
-kernel is handled through even polling (as well as communication between kernel modules); this typically devolves into
+kernel is handled through event polling (as well as communication between kernel modules); this typically devolves into
 a normal, blocking kernel implementation when there are few cores on the machine, but can result in significantly
 improved throughput on higher-core systems.
 
